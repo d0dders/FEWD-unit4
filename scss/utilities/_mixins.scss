@@ -3,4 +3,11 @@
         @content;
     }   
 }
+
+@mixin btn-bg($col) {
+    background-color: $col;
+    &:hover {
+        background-color: lighten($col, 15%);
+    }
+}
   
