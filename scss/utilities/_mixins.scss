@@ -1,0 +1,6 @@
+@mixin mq($bp) {
+    @media (min-width: $tablet-break) {
+        @content;
+    }   
+}
+  

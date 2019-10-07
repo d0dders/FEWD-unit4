@@ -10,8 +10,18 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    @include mq($tablet-break) {
+      padding: 10px 30px;
+    }
   }
   
+  .btn + .btn {
+    @include mq($tablet-break) {
+      margin-left: 10px;
+    }
+
+  }
+
   .default {
     background-color: $color-secondary;
   }
